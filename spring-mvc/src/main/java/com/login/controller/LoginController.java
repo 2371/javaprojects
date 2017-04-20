@@ -24,9 +24,9 @@ public class LoginController {
 	public String userCheck(ModelMap model, HttpServletRequest request) {
 		String name =request.getParameter("name");
 		String pwd =request.getParameter("pwd");
-		System.out.println("hhhh");
+
 		boolean bool = loginService.validateLoginCredentials(name, pwd);
-		System.out.println("The value of bool is"+bool);
+		
 		if(bool)
 		{
 			model.addAttribute("message", "Successfully logged in.");
@@ -37,25 +37,6 @@ public class LoginController {
 			return "redirect:failure.jsp";
 		}
 		
-		//return "redirect:success.jsp";
-	
-//	@RequestMapping(value="login", method = RequestMethod.GET)
-//	public String login(){
-//		return "redirect:pages/login.jsp";
-//	}
-//
-//	@RequestMapping(value="pages/userCheck", method = RequestMethod.POST)
-//	public String userCheck(ModelMap model, HttpServletRequest request) {
-//		String name=request.getParameter("name");
-//		String pwd=request.getParameter("pwd");
-//		if("concretepage".equalsIgnoreCase(name)&&"concretepage".equalsIgnoreCase(pwd)){
-//			model.addAttribute("message", "Successfully logged in.");
-//			
-//		}else{
-//			model.addAttribute("message", "Username or password is wrong.");
-//		}
-//		return "redirect:success.jsp";
-//	}
-//	
+		
 	}
 }

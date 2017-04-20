@@ -14,9 +14,8 @@ public class LoginServiceImpl implements LoginService {
 
 	public boolean validateLoginCredentials(String userId, String password) {
 		// TODO Auto-generated method stub
-		boolean check = loginDao.checkCredentials(userId, password);
-		
-		return check;
+		return loginDao.checkCredentials(userId, password);
+	
 	}
 
 }
