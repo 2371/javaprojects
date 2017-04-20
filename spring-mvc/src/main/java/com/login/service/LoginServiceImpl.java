@@ -13,7 +13,7 @@ public class LoginServiceImpl implements LoginService {
 	private LoginDao loginDao;
 
 	public boolean validateLoginCredentials(String userId, String password) {
-		// TODO Auto-generated method stub
+		
 		return loginDao.checkCredentials(userId, password);
 	
 	}

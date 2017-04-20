@@ -28,13 +28,13 @@ public class LoginDaoImpl implements LoginDao {
 	}
 
 	public boolean checkUserId(String userId) {
-		// TODO Auto-generated method stub
+		
 		return userCred.containsKey(userId);
 		
 	}
 
 	public boolean checkCredentials(String userId, String password) {
-		// TODO Auto-generated method stub
+		
 		insertData();
 		boolean userExist = checkUserId(userId);
 		if(userExist)
