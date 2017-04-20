@@ -28,12 +28,16 @@ public class LoginController {
 		boolean bool = loginService.validateLoginCredentials(name, pwd);
 		System.out.println("The value of bool is"+bool);
 		if(bool)
+		{
 			model.addAttribute("message", "Successfully logged in.");
+		    return "redirect:success.jsp";
+		}
 		else{
 			model.addAttribute("message", "Username or password is wrong.");
+			return "redirect:failure.jsp";
 		}
 		
-		return "redirect:success.jsp";
+		//return "redirect:success.jsp";
 	
 //	@RequestMapping(value="login", method = RequestMethod.GET)
 //	public String login(){

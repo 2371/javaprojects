@@ -105,7 +105,6 @@ box-shadow: none;
 </head>
 <body >
 <br><br><br><br><br><br>
-<h1 align="center">Welcome</h1>
 <h1 align="center">Login Message : ${param.message} </h1>
 
 
