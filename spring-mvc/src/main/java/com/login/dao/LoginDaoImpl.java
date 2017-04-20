@@ -12,7 +12,7 @@ public class LoginDaoImpl implements LoginDao {
 	Map<String, String> userCred = null;
 	
 	public Map<String, String> insertData() {
-		// TODO Auto-generated method stub
+
 		userCred = new HashMap<String,String>();
 		
 		userCred.put("robhert", "robert@123");
