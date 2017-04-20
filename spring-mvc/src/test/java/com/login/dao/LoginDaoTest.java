@@ -93,7 +93,7 @@ public class LoginDaoTest {
 	@Test
 	public void checkUserId() {
 		
-		assertEquals("ram@123",loginDao.checkUserId("ram"));
+		assertEquals(true,loginDao.checkUserId("ram"));
 		
 	}
 
