@@ -1,0 +1,5 @@
+projectKey=example:SonarTest
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/example:SonarTest
+ceTaskId=AVuBN-spA1exb-s3qbDW
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVuBN-spA1exb-s3qbDW
