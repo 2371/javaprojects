@@ -21,12 +21,28 @@
         <artifactId>sonar-maven-plugin</artifactId>
         <version>3.2</version>
       </plugin>
-      <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.20</version>
-        </plugin>
 	    
+       <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <outputDirectory>site</outputDirectory>
+
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>during-tests</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin> 	    
+	    
+	    
+
 	    
       <plugin>
     <groupId>org.jacoco</groupId>
