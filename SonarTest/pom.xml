@@ -22,6 +22,13 @@
         <artifactId>sonar-maven-plugin</artifactId>
         <version>3.2</version>
       </plugin>
+      <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/versions-maven-plugin -->
+<dependency>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>versions-maven-plugin</artifactId>
+    <version>2.3</version>
+</dependency>
+
     </plugins>
   </pluginManagement>
 </build>
