@@ -135,16 +135,7 @@
 		</dependency>
 	 </dependencies>
           <distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>moha2371-releases</name>
-        <url>http://localhost:8081/artifactory/libs-release</url>
-    </repository>
-		  <snapshotRepository>
-        <id>snapshots</id>
-        <name>moha2371-snapshots</name>
-        <url>http://localhost:8081/artifactory/libs-snapshot</url>
-    </snapshotRepository>
+    
   <repository>
         <id>central</id>
         <name>moha2371-releases</name>
